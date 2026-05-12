@@ -1,11 +1,18 @@
 @charset "UTF-8";
+
 html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+table {
+  scroll-margin-top: 32px;
+}
+
 body {
   margin: 0;
-  padding: 32px 32px 32px 280px;
+  padding: 32px;
   background-color: #121212;
   color: #ffffff;
   font-family:
@@ -66,16 +73,13 @@ li {
 }
 
 .toc {
-  position: fixed;
-  top: 32px;
-  left: 24px;
-  width: 220px;
+  position: static;
+  max-width: 420px;
   background-color: #181818;
   padding: 16px 20px;
   border-radius: 8px;
   font-size: 0.95rem;
-  height: calc(100vh - 64px);
-  overflow-y: auto;
+  margin-bottom: 2.4em;
 }
 
 .toc h2 {
@@ -155,13 +159,6 @@ td a:hover {
 @media (max-width: 800px) {
   body {
     padding: 20px;
-  }
-
-  .toc {
-    position: static;
-    width: auto;
-    height: auto;
-    margin-bottom: 2em;
   }
 
   table {
