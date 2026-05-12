@@ -1,0 +1,175 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 32px 32px 32px 280px;
+  background-color: #121212;
+  color: #ffffff;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    sans-serif;
+  line-height: 1.9;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #1db954;
+  margin-bottom: 0.6em;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+  border-left: 4px solid #1db954;
+  padding-left: 12px;
+  color: #ffffff;
+}
+
+p {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 720px;
+  margin-bottom: 1.8em;
+  font-size: 1rem;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  background-color: #1e1e1e;
+  padding: 20px 24px;
+  border-radius: 8px;
+  max-width: 720px;
+  margin-bottom: 1.8em;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.toc {
+  position: fixed;
+  top: 32px;
+  left: 24px;
+  width: 220px;
+  background-color: #181818;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+
+.toc h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 0.8em;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.toc li {
+  margin-bottom: 12px;
+}
+
+.toc a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+table {
+  margin-top: 24px;
+  border-collapse: collapse;
+  background-color: #181818;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 280px;
+}
+
+th {
+  background-color: #282828;
+  padding: 12px;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: none;
+}
+
+a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+td a {
+  display: block;
+  padding: 8px;
+  border-radius: 20px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+td a:hover {
+  background-color: #1db954;
+  color: #000;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 20px;
+  }
+
+  .toc {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-bottom: 2em;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  p,
+  ul {
+    padding: 16px;
+  }
+}
